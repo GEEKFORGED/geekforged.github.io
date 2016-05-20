@@ -18,6 +18,16 @@ layout: default
     {% endfor %}
   </ul>
 
+  <h1 class="page-heading">Pages</h1>
+
+  {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

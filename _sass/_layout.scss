@@ -5,7 +5,7 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
+    text-align: center;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -16,11 +16,36 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    //float: left;
 
     &,
     &:visited {
         color: $grey-color-dark;
+    }
+
+    .title-part-one {
+      font-family: "Audiowide", cursive;
+      &::before {
+        content: "";
+        border-bottom: 1px solid #333;
+        height: 1.618em;
+        width: 20%;
+        display: inline-block;
+        margin-bottom: 6px;
+        margin-right: 6px;
+      }
+    }
+    .title-part-two {
+      font-family: "Pacifico", cursive;
+      &::after {
+        content: "";
+        border-bottom: 1px solid #333;
+        height: 1.618em;
+        width: 20%;
+        display: inline-block;
+        margin-bottom: 6px;
+        margin-left: 6px;
+      }
     }
 }
 
