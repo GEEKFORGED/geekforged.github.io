@@ -117,5 +117,3 @@ Go ahead and verify your code, then upload it to your Arduino. You should see th
 
 [arduino_cc]: http://arduino.cc
 [arduino_cc_getting_started]: http://arduino.cc/en/Guide/HomePage
-[breadboard_primer]: {% post_url 2016-05-19-breadboard-primer %}
-[led_primer]: {% post_url 2016-05-19-led-primer %}
