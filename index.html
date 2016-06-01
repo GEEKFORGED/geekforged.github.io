@@ -4,10 +4,30 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Tutorials</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% unless site.tags.tutorial %}
+      Nothing to see here, move along...
+    {% endunless %}
+    {% for post in site.tags.tutorial %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Blog posts</h1>
+
+  <ul class="post-list">
+    {% unless site.tags.blog %}
+      Nothing to see here, move along...
+    {% endunless %}
+    {% for post in site.tags.blog %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Hello Arduino"
 date:   2016-05-19 21:47:23 -0400
 categories: Arduino
+tags: tutorial
 ---
 
 So, you finally went out and got yourself an Arduino. I believe congratulations are in order. Now, if you don't have one; go get one so I can congratulate you.

@@ -3,6 +3,7 @@ layout: post
 title:  "The world of Making"
 date:   2016-05-17 13:32:23 -0400
 categories: making
+tags: blog
 ---
 ![Arduino getting started kit]({{site.baseurl}}/assets/images/arduino_getting_started_kit_20160517_212824.jpg)
 
