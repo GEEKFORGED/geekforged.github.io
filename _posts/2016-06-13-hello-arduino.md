@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Arduino"
-date:   2016-05-19 21:47:23 -0400
+date:   2016-06-13 00:01:00 -0400
 categories: Arduino
 tags: tutorial
 ---
@@ -25,6 +25,8 @@ Assuming that your download was successful go ahead and install the software. No
 
 ### Setting up your environment
 Go ahead and open up the Arduino application if it is not already open. In the tool-bar at the top, you will see a "Tools" menu. Click it, then in the sub-menu that opens up click "Board". Select your board from that menu. The board I have is an Uno, so I selected "Arduino/Genuino Uno". Now, make sure that your Arduino board is not plugged into your computer via the USB cable. If it is, unplug it. Below the "Board" menu, there should be a "Port" menu. Take note of its contents. Now go ahead and plug in your Arduino. Your Arduino should be the entry that has changed in the "Port" menu; select it.
+
+![Arduino board selection]({{site.baseurl}}/assets/images/arduino_board_selection.png){:width="100%"}
 
 At this point, you have told your computer what type of board you are using, and how to talk to it. You can now begin uploading code to your Arduino to control your circuits!
 
@@ -95,7 +97,17 @@ void loop() {
 }
 ~~~
 
-Before uploading any code to the Arduino, it is always handy to *verify* it first. To do so, click the "Check-mark" button at the top of the screen. If everything went well, you should see a "Done Compiling" message in the green bar above the black output pane. If something did go wrong, the green bar would turn red and contain the error message. At this point however, since we haven't changed any of the code, everything should be fine.
+Before uploading any code to the Arduino, it is always handy to *verify* it first. To do so, click the "Check-mark" button at the top of the screen.
+
+![Arduino verify and upload]({{site.baseurl}}/assets/images/arduino_verify_upload.png)
+
+If everything went well, you should see a "Done Compiling" message in the green bar above the black output pane. If something did go wrong, the green bar would turn red and contain the error message like so:
+
+![Arduino syntax error]({{site.baseurl}}/assets/images/arduino_syntax_error.png)
+
+At this point however, since we haven't changed any of the code, everything should be fine.
+
+
 
 Now it's time to upload our code to the Arduino! Make sure that your USB cable is plugged into the Arduino. Go ahead and click the "Right arrow" button located next to the verify button (don't ask me why it is a right arrow... it's not even close to conventional for upload...). You might see the lights on your Arduino act a bit sporadic for a few seconds. This is completely normal as the unit is rebooting with the new code on it (hopefully). Once it stops blinking like crazy, you should see it blink on for one second, then off for the next. It will repeat this process indefinitely for as long as it is powered on.
 
