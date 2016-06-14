@@ -10,7 +10,7 @@ title: GeekForged
 title-part-one: Geek
 title-part-two: Forged
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a generalist Geek who loves to make, break and tinker with things.
+  My name is Dylan. I'm a Geek who loves to make, break and tinker with things.
   I hope to teach and inspire you to do the same, creating some truly amazing things along the way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://geekforged.com" # the base hostname & protocol for your site
