@@ -1,53 +1,19 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Tutorials</h1>
-
-  <ul class="post-list">
-    {% unless site.tags.tutorial %}
-      Nothing to see here, move along...
-    {% endunless %}
-    {% for post in site.tags.tutorial %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Blog posts</h1>
-
-  <ul class="post-list">
-    {% unless site.tags.blog %}
-      Nothing to see here, move along...
-    {% endunless %}
-    {% for post in site.tags.blog %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Pages</h1>
-
-  {% for my_page in site.pages %}
-    {% if my_page.title %}
-    <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-    {% endif %}
-  {% endfor %}
-
-  <br>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GeekForged</title>
+  </head>
+  <body style="text-align: center; font-family: sans-serif;">
+    <img src="logo.svg" width="30%" style="margin-left: auto; margin-right: auto; display: block;"/>
+    <h1>New Site Coming Soon!</h1> 
+    <p>The site is getting even better! A new site will be coming soon. For now, grab a beverage while I make some updates, and check out one of the fine links below.</p>
+    <ul style="display: inline-block; font-size:larger">
+      <li><a href="https://youtube.com/geekforged">YouTube</a></li>
+      <li><a href="https://instagram.com/geekforged">Instagram</a></li>
+      <li><a href="https://www.twitter.com/geekforged">Twitter</a></li>
+    </ul>
+    <p style="font-size: smaller;">This notice was posted on Jan 27th 2019.</p>
+  </body>
+</html>
